@@ -12,7 +12,7 @@ Installation
 * Using pip
   
       pip install mpjp-debuggingLibrary
-* Open remote chrome browser
+* <a id="open"></a>**Open remote chrome browser**
   * Setting the location of chrome browser as environmental variables
   * Create an empty folder at **C:\testChrome**
   * Input the command below
@@ -23,6 +23,20 @@ Installation
     
     The clean chrome browser should be opened.
 
-Usage
+Example
 -----
-Todo
+[Open remote chrome browser](#open) then go to `google` page.
+
+Run the test case below :
+```robotframework
+*** Settings ***
+Library    SeleniumLibrary
+Library    DebuggingLibrary  #import library
+
+*** Test Cases ***
+Searh Robot Framework On Google
+    Debug::Execute On Opened Browser  ##
+    Input Text    name=q    Robot Framework
+    Press Key     name=q    \\13
+    Page Should Contain    Robot Framework    
+```
