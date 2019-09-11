@@ -34,7 +34,7 @@ Library    SeleniumLibrary
 Library    DebuggingLibrary  #import library
 
 *** Test Cases ***
-Searh Robot Framework On Google
+Search Robot Framework On Google
     Debug::Execute On Opened Browser  ##
     Input Text    name=q    Robot Framework
     Press Key     name=q    \\13
