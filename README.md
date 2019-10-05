@@ -5,7 +5,7 @@ Introduction
 ------------
 This keyword library is based on [Robot Framework](https://robotframework.org/). In my experience in developing automation test cases, every time we want to check the specific action, we may run the whole test script but it also wastes a lot of time.
 
-So this library provides a keyword `Debug::Execute On Opened Browser` that can run the test scripts on the same browser.
+So this library provides a keyword `Debug::Execute On Opened Browser` that can keep running the test scripts on the same browser.
 
 Installation
 ----------
